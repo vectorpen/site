@@ -1,0 +1,108 @@
+
+#tinyLightboxOverlay{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	filter:alpha(opacity=70); 
+	-moz-opacity: 0.7; 
+	opacity: 0.7;
+}
+
+#tinyLightboxContainer{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: #fff;
+	display: none;
+}
+
+.loading{
+	background:url(../ccds_tpl_img/loading.gif) no-repeat center;
+}
+
+#tinyLightboxImage{
+	border: 10px solid #fff;
+	border-bottom: 0;
+	display: none;
+}
+
+.tinyLightboxHandle{
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	height: 100%;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #fff;
+	filter:alpha(opacity=0); 
+	-moz-opacity: 0; 
+	opacity: 0;	
+}
+#tinyLightboxRightHandle
+{
+	right: 0;
+}
+
+#tinyLightboxLeftHandle
+{
+	left: 0;
+}
+.tinyLightboxLabel{
+	position: absolute;
+	top: 40%;
+	width: 70px;
+	background: #fff;	
+	display: none;
+	color: #666;
+	font-size: 16px;
+	padding: 10px;
+}
+
+#tinyLightboxLeftLabel{
+	left: 0;
+	text-align: right;
+}
+#tinyLightboxRightLabel{
+	right: 0;
+}
+#tinyLightboxBar{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	background-color: #fff;
+}
+#tinyLightboxCloseLabel{
+	float: right;
+	width: 66px;
+	height: 22px;
+	cursor: pointer;
+	background: url(../ccds_tpl_img/closelabel.gif) no-repeat #fff;
+}
+#tinyLightboxBarText{
+}
+#tinyLightboxContainer p{
+	margin: 0;
+	padding-bottom: 10px;
+}
+#tinyLightboxContainer span{
+	float: left;
+	font-weight: bold;
+}
+
+.tinyLightboxBtn{
+	float: left;
+	color: #666;
+	cursor: pointer;
+	border: 1px solid #666;
+	margin-left: 10px;
+	padding: 0 3px 0 3px;
+}
+
+.tinyLightboxBtn:hover{
+	color: #000;
+	border: 1px solid #000;
+}

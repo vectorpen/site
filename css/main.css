@@ -1,0 +1,672 @@
+/***************************************************************************************************************
+Main declarations
+**************************************************************************************************************/
+html{
+	background: url(../ccds_tpl_img/body-bg.png) repeat-x;
+}
+body {
+	font-family: "Trebuchet MS", Verdana,Arial, Times;
+	font-size:12px;
+	line-height: 18px;
+	color:#050d15;
+	margin:0px;
+
+}
+#center{
+	position: absolute;
+	width: 870px;
+	margin-left: -435px;
+	left: 50%;
+
+}
+
+#header{
+	height: 144px;
+	line-height: 0px;
+}
+
+a.rss{
+	float: right;
+	margin: 5px 10px;
+
+}
+
+#header .side{
+	float: left;
+	width: 3px;
+	height: 100%;
+	margin-left: 0px;
+	background: url(../ccds_tpl_img/header-side.png) repeat-x;	
+}
+#header_bg{
+	float: left;
+	height: 100%;
+	width: 774px;
+	background: url(../ccds_tpl_img/header-bg.png) repeat-x;	
+	padding: 0 60px 0 30px;
+}
+
+
+
+#logo{
+	float: left;
+	margin-top: 20px;
+	background: url(../ccds_tpl_img/logo.png) no-repeat;	
+	width: 214px;
+	height: 123px;
+}
+
+#header_right{
+	float: right;
+	width: 480px;	
+}
+#lang{
+	float: right;
+	width: 95px;
+	height: 26px;
+	background: url(../ccds_tpl_img/lang-panel.png) no-repeat;	
+	padding: 5px 8px 0 5px;
+	text-align: center;
+}
+#lang a{
+	float: right;
+	margin-right: 5px;
+	width: 24px;
+	height: 17px;
+}
+
+#lang a.disabled{
+	filter:alpha(opacity=30); 
+	-moz-opacity: 0.3; 
+	opacity: 0.3;
+}
+
+
+#lang .en{
+	background: url(../ccds_tpl_img/en.png) no-repeat;	
+}
+#lang .de{
+	background: url(../ccds_tpl_img/de.png) no-repeat;	
+}
+#lang .ru{
+	background: url(../ccds_tpl_img/ru.png) no-repeat;	
+}
+
+
+#navi{
+	text-align: right;
+	margin-top: 110px;
+}
+#page_loading{
+	position: absolute;
+	z-index: 1000;
+	top: 15px;
+	left: 50%;
+	margin-left: -16px;
+	height: 48px;
+	width: 48px;
+
+}
+
+
+#page{
+	float: left;
+	width: 100%;
+	background: url(../ccds_tpl_img/content-bg.png) repeat-x;
+}
+
+#page #content{
+	float: left;
+	width: 500px;
+	padding: 40px 0 40px 60px;
+}
+
+#page #teaser{
+	float: right;
+	width: 185px;
+	padding: 40px 55px 40px 0;
+}
+#page #teaser{
+	padding-right: 65px;
+}
+
+
+
+
+
+#footer{
+	height: 33px;
+}
+#footer .left{
+	float: left;
+	width: 5px;
+	height: 100%;
+	background: url(../ccds_tpl_img/footer-left.png) no-repeat;	
+}
+#footer .right{
+	background: url(../ccds_tpl_img/footer-right.png) no-repeat;	
+}
+#footer .bg{	
+	float: left;
+	width: 770px;
+	height: 100%;
+	background: url(../ccds_tpl_img/footer-bg.png) repeat-x;
+	text-align: right;
+	padding: 0 45px 0 45px;
+}
+#footer a{
+	color: #fff;
+	line-height: 26px;
+	font-size: 12px;
+	margin-right: 15px;
+	text-decoration: underline;
+}
+
+#footer #left{
+	float: left;
+	color: #fff;
+}
+
+#footer #right{
+	float: right;
+	color: #fff;
+}
+
+.noscript{
+	position: absolute;
+	width: 824px;
+	top: 0;
+	text-align: center;
+	padding: 20px;
+	border: 3px solid red;
+	color: red;
+	font-size: 20px;
+}
+
+input, textarea, select{
+	border: 1px solid #112743;
+}
+input.radio, input.checkbox{
+	margin-bottom: -2px !important;
+	border: 0px;
+	width: auto !important;
+}
+
+input.checkbox{
+	margin-right: 5px;
+}
+
+button{
+	border: 1px solid #000;
+	
+	text-align: center;
+}
+img{
+	border: 0px;
+}
+.clear{
+	clear: both;
+}
+.red{
+	color: #9e0000;
+}
+.yellow{
+	color:#cc9933;
+}
+.blue{
+	color: #112743;
+}
+.gray{
+	color: #666;
+}
+
+b, strong{
+	font-weight: bold;
+}
+em{
+	font-style: italic;
+}
+
+ul{
+	list-style:auto;
+	padding-left: 15px;
+	margin: 0px;
+}
+li{
+	padding-left: 10px;
+	margin: 0px;	
+	
+}
+a{
+	color:#9e0000;
+	text-decoration: none;
+}
+a:hover{
+	color:#9e0000;
+	text-decoration: underline;
+}
+
+
+a.navi{
+	font-size:14px;
+	color:#112743;
+	text-decoration: none;
+	margin-left: 25px;
+	line-height: 16px;
+	font-weight: bold;
+}
+a.navi:hover, a.navi.active{
+	font-size:14px !important;
+	color:#9e0000;
+	text-decoration: none !important;	
+	margin-bottom: 2px;
+}
+
+a.subnavi{
+	font-size:12px;
+	color:#112743;
+	text-decoration: none;
+	line-height: 18px;
+}
+a.subnavi:hover, a.subnavi.active{
+	font-size:12px;
+	text-decoration: underline;	
+	color:#9e0000;
+}
+ul.subnavi{
+	padding: 0 ;
+}
+ul.subnavi li.arrow{
+	width: auto;
+	line-height: 18px;	
+
+}
+ul.subnavi li{
+	float: left;
+	width: 140px;
+	list-style:none;
+	padding: 0;
+}
+
+h1{
+	font-size:18px;
+	line-height: 22px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color:#06326a;
+	padding: 0;
+}
+.highlightBox h1{
+	padding: 28px 0 0 54px;
+	font-size: 16px;
+	line-height: 16px;
+	color: #fff;
+	margin:0;
+	font-weight: normal;	
+}
+.universalBox h1{
+	padding: 4px 0 0 0;
+	font-size: 16px;
+	line-height: 16px;
+	color: #fff;
+	margin:0;
+	font-weight: normal;
+}
+h2{
+	font-size:14px;
+	line-height: 18px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color:#cc9933;
+}
+h3{
+	font-size:16px;
+	line-height: 12px;
+	margin-bottom: 14px;
+	font-weight: bold;
+	color:#06326a;
+}
+
+/***************************************************************************************************************
+Teaser boxes
+**************************************************************************************************************/
+
+.highlightBox{
+	float: right;
+	width: 185px;
+	margin-bottom: 30px;
+}
+.highlightBoxHeader {
+	width: 100%;
+	height: 59px;
+	line-height: 0;
+}
+.highlightBoxHeaderDownload{
+	background: url(../ccds_tpl_img/box-download-header.png) no-repeat;	
+}
+.highlightBoxHeaderBuy{
+	background: url(../ccds_tpl_img/box-buy-header.png) no-repeat;	
+}
+
+.highlightBoxContent{
+	width: 152px;
+	border-bottom: 2px solid #993d10;
+	padding: 10px;
+	margin-left: 13px;
+	background: url(../ccds_tpl_img/box-bg.png) repeat-x #e7eaec bottom ;	
+}
+
+
+.universalBox{
+	
+}
+.universalBoxHeader{
+	height: 23px;
+}
+.universalBoxLeft{
+	float: left;
+	width: 9px;
+	height: 100%;
+	background: url(../ccds_tpl_img/box-header-left.png) no-repeat;
+}
+.universalBoxRight{
+	background: url(../ccds_tpl_img/box-header-right.png) no-repeat;	
+}
+.universalBoxBg{
+	float: left;
+	height: 100%;	
+	background: url(../ccds_tpl_img/box-header-bg.png) repeat-x;	
+}
+.universalBoxBgTeaser{
+	width: 167px;
+}
+.universalBoxContent{
+	border-bottom: 2px solid #993d10;
+	padding: 10px;
+	background: url(../ccds_tpl_img/box-bg.png) repeat-x #e7eaec bottom ;	
+}
+
+
+/***************************************************************************************************************
+Login
+**************************************************************************************************************/
+#login label{
+	float: left;
+	width: 60px;
+	padding: 2px 10px 10px 0;
+	clear: both;	
+}
+#login input{
+	float: left;
+	width: 148px;
+	padding: 2px;
+	margin-bottom: 15px;
+}
+#login button{
+	float: right;
+}
+#login_waiting{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: 110px;
+	left: 130px;
+	background:url(../ccds_tpl_img/loading.gif) no-repeat;	
+}
+
+/***************************************************************************************************************
+Gallery
+**************************************************************************************************************/
+
+#gallery_box .universalBoxBg{
+	width: 482px;
+}
+
+#gallery_box .universalBoxContent{
+	height: 120px;
+	padding: 10px 0 0 0;
+
+}
+
+#gallery_navi{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	padding-top: 2px;
+}
+#gallery_navi a{
+	color: #fff;
+	line-height: 12px;
+}
+
+
+#gallery_holder{
+	position: absolute;
+	width: 480px;
+	left: 50px;
+}
+
+#galleryLoading{
+	position: absolute;
+	width: 480px;
+	height: 130px;
+	z-index: 999999;
+	top: 40px;
+	text-align: center;
+}
+
+.screen{
+	width:800px;
+
+}			
+.screen li{
+	float:left;
+	list-style:none;
+	padding: 0;
+}
+.screen .jq-ss-crop{
+	padding: 6px 0 0 9px;
+	border:0px solid #FFFFCC;
+	float:left;		
+	cursor: pointer;
+}
+.screen .left, .screen .right{
+	margin-top:40px;
+	display:block;
+	text-decoration:none;
+	width: 32px;
+	height: 32px;
+	background: url(../ccds_tpl_img/go-previous.png) no-repeat;
+	cursor: pointer;
+
+}
+.screen .right{
+	background: url(../ccds_tpl_img/go-next.png) no-repeat;
+}
+
+
+.screen .view{
+	width:425px;
+	border:1px white solid;
+	height:110px;
+	overflow:hidden;
+	background-color:black;
+}
+.screen .images{
+	width:3818px !important;
+	width:3822px;
+	padding-left:0;
+}
+
+
+/***************************************************************************************************************
+Kontakt
+**************************************************************************************************************/
+
+#contact label{
+	float: left;
+	width: 100px;
+	padding: 2px 10px 10px 0;
+	clear: both;	
+}
+#contact form{
+	width: 400px;
+}
+
+#contact input{
+	float: left;
+	width: 280px;
+	padding: 2px;
+	margin-bottom: 15px;
+	
+}
+
+#contact select{
+	float: left;
+	width: 286px;	
+	padding: 2px;
+	margin-bottom: 15px;	
+}
+#contact textarea{
+	float: left;
+	width: 284px;	
+	margin-bottom: 15px;	
+}
+
+#contact button{
+	width: 100px;
+	float: right;
+	margin-right: 4px;
+}
+
+#contact .subject{
+	float: left;	
+	margin-bottom: 15px;	
+}
+#contact .radio, #contact .checkbox{
+	margin-top: 3px;
+	clear: left;
+}
+#contact_message{
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+#contact_uploading{
+	position: absolute;
+	z-index: 1000;
+	height: 48px;
+	width: 48px;
+	top: 75px;
+	left: 115px;
+}
+/***************************************************************************************************************
+Specification table
+**************************************************************************************************************/
+
+#specification {
+	border: 1px solid #000;
+	border-collapse: collapse;	
+}
+#specification td{
+	padding: 2px;
+	border: 1px solid #000;	
+}
+#specification .header{
+	font-weight: bold;
+}
+#specification tr{
+
+}
+
+#specification td.left{
+	width: 130px;
+
+}
+
+
+/***************************************************************************************************************
+Download dialog
+**************************************************************************************************************/
+div#terms{	
+	position: relative;
+	overflow: auto;
+	padding: 5px;
+	border: 1px solid #000;
+	width: 385px;
+	height: 120px;
+	clear: left;
+	margin-bottom: 10px;
+}
+
+#termsDialog{
+}
+
+
+			
+.swWindow { 
+	position: relative; 
+	height: 271px; 
+	overflow: hidden;
+}
+.swArrowUp,
+.swArrowDown { 
+	position: absolute; 
+	right: 0; 
+	width: 10px; 
+	height: 15px;
+	background: #333;
+	cursor: pointer;
+}
+.swArrowUp { 
+	top: 0; 
+}
+.swArrowDown { 
+	bottom: 0; 
+}
+.swTrack { 
+	position: absolute; 
+	top: 15px; 
+	right: 0; 
+	width: 10px; 
+	height: 100%;  
+	background: #999; 
+	cursor: pointer;	
+}
+.swSlider {
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	width: 10px;
+	background: #666; 
+}
+.swContent { 
+	position: relative; 
+	top: 0px; 
+	padding-bottom: 13px;
+} /* padding bottom should always be at least 13px */
+
+.swArrowDown-over,
+.swArrowUp-over { 
+	background: #090; 
+}
+.swArrowDown-active,
+.swArrowUp-active { 
+	background: #099; 
+}
+
+.swSlider-over { 
+	background: #090; 
+}
+.swSlider-active { 
+	background: #099; 
+}
+
+
+
+
+
+
+
+

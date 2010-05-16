@@ -1,0 +1,10 @@
+@import "flora/flora.resizable.css";
+@import "flora/flora.dialog.css";
+
+.ui-wrapper { 
+	border: 1px solid #50A029; 
+}
+.ui-wrapper input, .ui-wrapper textarea {
+	border: 0; 
+}
+
