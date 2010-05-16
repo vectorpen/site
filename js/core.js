@@ -13,6 +13,10 @@ $(document).ready(function(){
 
 	//bind the tinyLighbox
 	$('#gallery .images a').tinyLightbox();
+
+	var email = 'vectorpen@gmail.com';		
+	$('#email').attr('href','mailto:' + email).text(email);
+	
 });
 
 	/*
